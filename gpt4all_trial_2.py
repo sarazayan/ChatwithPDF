@@ -12,7 +12,7 @@ drive.mount('/content/drive/')
 
 #!ls '/content/drive/MyDrive/Multiple_PDFs'
 
-!apt-get install poppler-utils  #to present pages of p
+#!apt-get install poppler-utils  #to present pages of p
 
 !pip install -Uqqq pip --progress-bar off
 !pip install -qqq langchain==0.0.173 --progress-bar off
