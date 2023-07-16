@@ -10,7 +10,7 @@ Original file is located at
 from google.colab import drive
 drive.mount('/content/drive/')
 
-!ls '/content/drive/MyDrive/Multiple_PDFs'
+#!ls '/content/drive/MyDrive/Multiple_PDFs'
 
 !apt-get install poppler-utils  #to present pages of p
 
