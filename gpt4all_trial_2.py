@@ -71,7 +71,7 @@ db = Chroma.from_documents(texts, embeddings, persist_directory="db")
 model_n_ctx = 1000
 model_path = "./ggml-gpt4all-j-v1.3-groovy.bin"
 llm = GPT4All(model=model_path, n_ctx=1000, backend="gptj",temp=0.9,verbose=False)
-#trauned with gpt-j
+#trained with gpt-j
 
 #Retrieval
 #we get source of document
@@ -83,7 +83,7 @@ qa = RetrievalQA.from_chain_type(
     verbose=False,
 )
 
-print(res["result"])
+#print(res["result"])
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%time
@@ -91,11 +91,9 @@ print(res["result"])
 # res = qa(prompt.strip())
 
 # Commented out IPython magic to ensure Python compatibility.
-# #Ask Questions
-# %%time
-# res = qa(
-#     "Give examples of the main purposes of the KGAS."
-# )
+#Ask Questions
+ %%time
+res = qa("Give examples of the main purposes of the KGAS.")
 
 res
 
@@ -106,7 +104,7 @@ res
 #     "Summarize the right of contracting authority."
 # )
 
-res
+  #res
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -115,7 +113,7 @@ res
 #     "List at least 5 items the training strategy must contain"
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -124,7 +122,7 @@ res
 #     "What is FOSS in 5 sentences "
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -133,7 +131,7 @@ res
 #     "Describe in detail the quality assurance goals "
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -142,7 +140,7 @@ res
 #     "List examples of Unit Test requirements in terms of coverage "
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -151,7 +149,7 @@ res
 #     "What are the categories or types or requirements have to be assigned? "
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -160,7 +158,7 @@ res
 #     "What are the main components of project management?  "
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -169,7 +167,7 @@ res
 #     "How the usage of FOSS is permitted?  "
 # )
 
-res
+es
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -178,7 +176,7 @@ res
 #     "What is data acquisition strategy, and what does it include? "
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -187,7 +185,7 @@ res
 #     "How to select and use programming language of the software product? "
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -196,7 +194,7 @@ res
 #     "Describe in detail the quality assurance goals "
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -212,7 +210,7 @@ res
 #     "Describe in details the General Cybersecurity Requirements"
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -221,7 +219,7 @@ res
 #     "Describe Briefly the General Cybersecurity Requirements"
 # )
 
-res
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # #Ask Questions
@@ -229,9 +227,9 @@ res
 # res = qa("Where is the documentation deliverable provided ?"
 # )
 
-res #0.1
+ #0.1
 
-res #0.5
+ #0.5
 
-res #0.9
+ #0.9
 
