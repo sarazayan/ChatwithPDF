@@ -7,12 +7,12 @@ Original file is located at
     https://colab.research.google.com/drive/1Zb49PAJRi-p6zlMe1KooEwJfzoRMoBpf
 """
 
-from google.colab import drive
-drive.mount('/content/drive/')
+#from google.colab import drive
+#drive.mount('/content/drive/')
 
-!ls '/content/drive/MyDrive/Multiple_PDFs'
+#!ls '/content/drive/MyDrive/Multiple_PDFs'
 
-!apt-get install poppler-utils  #to present pages of p
+#!apt-get install poppler-utils  #to present pages of p
 
 !pip install -Uqqq pip --progress-bar off
 !pip install -qqq langchain==0.0.173 --progress-bar off
@@ -39,6 +39,7 @@ loader = PyPDFDirectoryLoader('multiple docs')
 docs = loader.load()
 type(docs)
 print(docs)
+'''
 
 from langchain.document_loaders import PyPDFLoader
 loader = PyPDFLoader("/content/volkswagen.pdf")
