@@ -14,13 +14,13 @@ Original file is located at
 
 #!apt-get install poppler-utils  #to present pages of p
 
-!pip install -Uqqq pip --progress-bar off
+'''!pip install -Uqqq pip --progress-bar off
 !pip install -qqq langchain==0.0.173 --progress-bar off
 !pip install -qqq chromadb==0.3.23 --progress-bar off
 !pip install -qqq pypdf==3.8.1 --progress-bar off
 !pip install -qqq pygpt4all==1.1.0 --progress-bar off
 !pip install -qqq pdf2image==1.16.3 --progress-bar off
-
+'''
 #!gdown 1DpFisoGXsQbpQJvijuvxkLW_pg-FUUMF
 
 !wget https://gpt4all.io/models/ggml-gpt4all-j-v1.3-groovy.bin #4GB_memory , 6B parameter
